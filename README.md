@@ -5,6 +5,9 @@ More information in this blog post:
 
 https://blog.muffn.io/posts/part-4-100tb-mini-nas/ (if that link doesn't work it's not released yet.)
 
+# Personal Fork
+The mergerfs-cache-mover respository was forked from monstermuffin to tailor to my personal requirements. I do not plan on working on this just yet but having the repo here will serve as a reminder for myself.
+
 ## How It Works
 The script operates by checking the disk usage of the cache directory. If the usage is above the threshold percentage defined in the configuration file (`config.yml`), it will move the oldest files out to the backing storage location until the usage is below a defined target percentage. Empty directories are also cleaned up after files are moved.
 
